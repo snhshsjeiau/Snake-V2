@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — لعبة الثعبان</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🐍 Snake — لعبة الثعبان</h1>
+
+    <div class="hud">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="gameCanvas" width="480" height="480" aria-label="لعبة الثعبان"></canvas>
+    </div>
+
+    <p class="instructions">
+      استخدم مفاتيح الأسهم أو WASD للتحرك. اضغط Space لبدء/إيقاف مؤقت.
+    </p>
+
+    <footer>
+      <small>مبني باستخدام HTML5 Canvas — جاهز للرفع على GitHub</small>
+    </footer>
+  </main>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
